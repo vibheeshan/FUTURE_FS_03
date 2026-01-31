@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast & Ritual | Specialty Coffee Roastery & Café</title>
+    <meta name="description" content="Chennai's finest specialty coffee roastery. Freshly roasted beans, expertly crafted beverages, and a space for coffee lovers.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Roast & Ritual</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#roastery" class="nav-link">Our Roastery</a></li>
+                <li><a href="#contact" class="nav-link">Visit Us</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://wa.me/919876543210" class="btn-whatsapp">Order Now</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Est. 2022</div>
+            <h1 class="hero-title">
+                <span class="title-line">Chennai's</span>
+                <span class="title-line highlight">Finest Coffee</span>
+                <span class="title-line">Experience</span>
+            </h1>
+            <p class="hero-subtitle">Specialty beans roasted with care. Crafted beverages with soul. A space that feels like home.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#contact" class="btn btn-secondary">Find Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">Where Coffee Becomes an Art</h2>
+                    <div class="about-text">
+                        <p>Born from a deep love for exceptional coffee, Roast & Ritual started in 2022 with a simple mission: to bring specialty-grade coffee to Chennai's vibrant community.</p>
+                        <p>We source single-origin beans from ethical farms across India and beyond, roast them fresh in-house, and craft each cup with precision and passion.</p>
+                        <p>More than a café, we're a gathering place for coffee enthusiasts, remote workers, students, and anyone who appreciates the ritual of a perfectly brewed cup.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌱</div>
+                            <div class="feature-text">
+                                <h4>Ethically Sourced</h4>
+                                <p>Direct trade with farmers</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔥</div>
+                            <div class="feature-text">
+                                <h4>Roasted Fresh</h4>
+                                <p>Small batch roasting daily</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">☕</div>
+                            <div class="feature-text">
+                                <h4>Expert Baristas</h4>
+                                <p>Trained in specialty coffee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card card-1"></div>
+                    <div class="visual-card card-2"></div>
+                    <div class="visual-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Customers Monthly</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Single Origin Beans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-header">
+                <span class="section-label">Our Menu</span>
+                <h2 class="section-title">Crafted with Care</h2>
+                <p class="section-description">From classic espresso to signature cold brews, each drink is a journey.</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="espresso">Espresso Based</button>
+                <button class="category-btn" data-category="brewed">Brewed Coffee</button>
+                <button class="category-btn" data-category="specialty">Specialty Drinks</button>
+                <button class="category-btn" data-category="food">Food & Pastries</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <!-- Espresso Based -->
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-info">
+                        <h3 class="item-name">Espresso</h3>
+                        <p class="item-desc">Single or double shot of pure excellence</p>
+                    </div>
+                    <span class="item-price">₹80 / ₹120</span>
+                </div>
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-info">
+                        <h3 class="item-name">Cappuccino</h3>
+                        <p class="item-desc">Perfectly balanced espresso, steamed milk, and foam</p>
+                    </div>
+                    <span class="item-price">₹150</span>
+                </div>
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-info">
+                        <h3 class="item-name">Flat White</h3>
+                        <p class="item-desc">Velvety microfoam meets rich espresso</p>
+                    </div>
+                    <span class="item-price">₹160</span>
+                </div>
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-info">
+                        <h3 class="item-name">Latte</h3>
+                        <p class="item-desc">Smooth and creamy, our most popular choice</p>
+                    </div>
+                    <span class="item-price">₹140</span>
+                </div>
+
+                <!-- Brewed Coffee -->
+                <div class="menu-item" data-category="brewed">
+                    <div class="item-info">
+                        <h3 class="item-name">Pour Over</h3>
+                        <p class="item-desc">Handcrafted precision brewing, rotating single origins</p>
+                    </div>
+                    <span class="item-price">₹180</span>
+                </div>
+                <div class="menu-item" data-category="brewed">
+                    <div class="item-info">
+                        <h3 class="item-name">French Press</h3>
+                        <p class="item-desc">Full-bodied and rich, steeped to perfection</p>
+                    </div>
+                    <span class="item-price">₹160</span>
+                </div>
+                <div class="menu-item" data-category="brewed">
+                    <div class="item-info">
+                        <h3 class="item-name">Cold Brew</h3>
+                        <p class="item-desc">Smooth, sweet, slow-steeped for 18 hours</p>
+                    </div>
+                    <span class="item-price">₹170</span>
+                </div>
+                <div class="menu-item" data-category="brewed">
+                    <div class="item-info">
+                        <h3 class="item-name">Aeropress</h3>
+                        <p class="item-desc">Clean and bright, highlighting subtle flavors</p>
+                    </div>
+                    <span class="item-price">₹150</span>
+                </div>
+
+                <!-- Specialty Drinks -->
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-info">
+                        <h3 class="item-name">Honey Vanilla Latte</h3>
+                        <p class="item-desc">Our signature blend with local honey and vanilla</p>
+                    </div>
+                    <span class="item-price">₹180</span>
+                </div>
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-info">
+                        <h3 class="item-name">Iced Caramel Macchiato</h3>
+                        <p class="item-desc">Layered perfection over ice</p>
+                    </div>
+                    <span class="item-price">₹190</span>
+                </div>
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-info">
+                        <h3 class="item-name">Cardamom Cortado</h3>
+                        <p class="item-desc">Indian spice meets Spanish tradition</p>
+                    </div>
+                    <span class="item-price">₹160</span>
+                </div>
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-info">
+                        <h3 class="item-name">Turmeric Latte</h3>
+                        <p class="item-desc">Golden milk with a coffee twist</p>
+                    </div>
+                    <span class="item-price">₹170</span>
+                </div>
+
+                <!-- Food & Pastries -->
+                <div class="menu-item" data-category="food">
+                    <div class="item-info">
+                        <h3 class="item-name">Croissant</h3>
+                        <p class="item-desc">Buttery, flaky, baked fresh daily</p>
+                    </div>
+                    <span class="item-price">₹80</span>
+                </div>
+                <div class="menu-item" data-category="food">
+                    <div class="item-info">
+                        <h3 class="item-name">Banana Walnut Bread</h3>
+                        <p class="item-desc">Moist and delicious, house-made</p>
+                    </div>
+                    <span class="item-price">₹90</span>
+                </div>
+                <div class="menu-item" data-category="food">
+                    <div class="item-info">
+                        <h3 class="item-name">Avocado Toast</h3>
+                        <p class="item-desc">Sourdough, smashed avocado, cherry tomatoes, feta</p>
+                    </div>
+                    <span class="item-price">₹220</span>
+                </div>
+                <div class="menu-item" data-category="food">
+                    <div class="item-info">
+                        <h3 class="item-name">Breakfast Sandwich</h3>
+                        <p class="item-desc">Egg, cheese, choice of protein on fresh bread</p>
+                    </div>
+                    <span class="item-price">₹180</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roastery Section -->
+    <section class="roastery" id="roastery">
+        <div class="container">
+            <div class="roastery-grid">
+                <div class="roastery-visual">
+                    <div class="roastery-image"></div>
+                    <div class="roastery-badge">
+                        <span class="badge-number">500kg</span>
+                        <span class="badge-text">Roasted Monthly</span>
+                    </div>
+                </div>
+                <div class="roastery-content">
+                    <span class="section-label">The Roastery</span>
+                    <h2 class="section-title">From Bean to Cup</h2>
+                    <p>Our roastery is the heart of everything we do. Using a state-of-the-art Probat roaster, we carefully develop each coffee's unique flavor profile.</p>
+                    <p>We roast small batches multiple times per week to ensure maximum freshness. Every bag of beans you take home was roasted within the last 7 days.</p>
+                    
+                    <div class="roastery-origins">
+                        <h4>Current Single Origins:</h4>
+                        <div class="origins-grid">
+                            <div class="origin-tag">🇮🇳 Chikmagalur, Karnataka</div>
+                            <div class="origin-tag">🇮🇳 Araku Valley, Andhra Pradesh</div>
+                            <div class="origin-tag">🇪🇹 Yirgacheffe, Ethiopia</div>
+                            <div class="origin-tag">🇨🇴 Huila, Colombia</div>
+                            <div class="origin-tag">🇬🇹 Antigua, Guatemala</div>
+                            <div class="origin-tag">🇰🇪 Nyeri, Kenya</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=I'd like to order coffee beans" class="btn btn-primary">Order Fresh Beans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <span class="section-label">What People Say</span>
+            <h2 class="section-title">Coffee Lovers Love Us</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Best coffee in Chennai, hands down. The pour over is exceptional and the atmosphere is perfect for working."</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Sharma</strong>
+                        <span>Regular Customer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally, a place that understands specialty coffee! The baristas are knowledgeable and the beans are incredibly fresh."</p>
+                    <div class="testimonial-author">
+                        <strong>Arjun Menon</strong>
+                        <span>Coffee Enthusiast</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"My favorite spot for weekend brunch. The avocado toast is amazing and pairs perfectly with their signature latte."</p>
+                    <div class="testimonial-author">
+                        <strong>Nisha Patel</strong>
+                        <span>Food Blogger</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Visit Us</span>
+                    <h2 class="section-title">Come Say Hello</h2>
+                    <p>We're open and brewing. Stop by for a cup, stay for the vibe.</p>
+                    
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>45, Chamiers Road<br>Nungambakkam, Chennai - 600034</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-content">
+                                <h4>Hours</h4>
+                                <p>Monday - Sunday<br>7:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>Contact</h4>
+                                <p>+91 98765 43210<br>hello@roastandritual.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="https://wa.me/919876543210" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9353076992583!2d80.24128631482185!3d13.041810990806558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267a0f0f0f0f1%3A0x0!2zMTPCsDAyJzMwLjUiTiA4MMKwMTQnMzYuOCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.google.com/?q=Chamiers Road Nungambakkam Chennai" class="btn-directions">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">☕</span>
+                        <span class="logo-text">Roast & Ritual</span>
+                    </div>
+                    <p>Specialty coffee, crafted with care.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#about">About</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#roastery">Roastery</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="https://wa.me/919876543210">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roast & Ritual. All rights reserved. | Website by [Your Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
